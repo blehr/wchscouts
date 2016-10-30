@@ -1,0 +1,38 @@
+<div id="startPage" class="oath" ng-show="showStart">
+    <p>hope you studied!</p>
+    <button class="button" id="start" ng-click="showQuiz()">Time to begin</button>
+</div>
+
+<div class="quiz oath" ng-hide="hideQuiz">
+    <div id="content">
+        <div id="question">
+            <h3>{{ data[count].question }}</h3>
+        </div>
+        <form>
+            <div id="choices" class="radio">
+                <label ng-repeat="item in data[count].choices">
+                    <input type="radio" name="choice" class="choice" value="{{ $index }}" ng-model="$parent.answer"> {{ item }}</br>
+                </label>
+            </div>
+        </form>
+    </div>
+
+    <div id="quiz-nav">
+        <div class="back-next">
+            <button class="btn" id="back" ng-click="backQuestion()">Back</button>
+            <button class="btn" id="next" ng-click="nextQuestion()">Next</button>
+        </div>
+        
+    </div>
+    <div id="status">
+
+        <p>Question number <span class="big-text">{{ questNum }}</span> of <span class="big-text">{{ data.length }}</span></p>
+        <p>Your score is <span class="big-text">{{ score }}</span></p>
+
+    </div>
+</div>
+<div ng-show="final">
+    <h2>Your score is {{ score }} / {{ data.length }}</h2>
+    <button class='button' id='try-again' ng-click="reset()" >Try Again?</button>
+</div>
+    

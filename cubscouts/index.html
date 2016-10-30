@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="myApp" class="no-js" ng-controller="AppCtrl as app">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>WCH Pack 112 | {{ app.Page.title() }}</title>
+  <meta name="description" content="{{ app.Page.description()  }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
+  <link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196">
+  <link rel="icon" type="image/png" href="favicon-160x160.png" sizes="160x160">
+  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="mstile-144x144.png">
+
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+
+  <link href='https://fonts.googleapis.com/css?family=Lora|Open+Sans:400,700|Changa+One' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animate.css">
+
+  <link rel="stylesheet" href="app.css">
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <a href="" ng-click="app.menuToggle()" id="nav-links">
+      <div class="nav-button box-shadow-menu"></div>
+    </a>
+
+    <div id="logo">
+
+      <h1><a href="#/home">CubScouts<br>WCH Pack 112</a>
+      </h1>
+
+    </div>
+
+
+    <!--Mobile nav-->
+
+    <div id="mobile-nav" class="clearfix">
+      <div class="hidden-nav nav-button">
+        <p><a href="" ng-click="app.menuToggle()">X</a>
+        </p>
+      </div>
+
+      <ul class="main-mobile-nav" ng-click="app.menuToggle()">
+        <li><a href="#/home">Home</a>
+        </li>
+        <li><a href="#/pack112">Welcome to Pack 112</a>
+        </li>
+        <li><a href="#/bobcat">Bobcat</a>
+        </li>
+        <li><a href="#/quiz">Bobcat Quiz</a>
+        </li>
+        <li><a href="#/tiger">Tiger</a>
+        </li>
+        <li><a href="#/wolf">Wolf</a>
+        </li>
+        <li><a href="#/bear">Bear</a>
+        </li>
+        <li><a href="#/webelos">Webelos</a>
+        </li>
+        <li><a href="#/resources">Resources</a>
+        </li>
+        <li><a href="../index.html">WCH Scout Portal</a>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <!--Mobile nav end-->
+
+  </header>
+
+
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <div class="view-container">
+    <div ng-view></div>
+  </div>
+
+
+  <footer>
+    <a href="https://www.facebook.com/pages/Washington-Court-House-Pack-112/209626372403843" target="_blank">
+      <img src="img/FB_FindUsOnFacebook-100.png" class="footer-social" alt="facebook image">
+    </a>
+
+    <p class="designedBy">Designed by <a href="http://brandonlehr.com">Brandon Lehr</a>
+    </p>
+
+    <p>Contact us <a href="mailto:wchpack112@gmail.com">wchpack112@gmail.com</a>
+    </p>
+
+
+    <p class="designedBy">Hosting graciously provided by <a href="http://www.hopoffacloud.com/">Hop Off A Cloud</a>
+    </p>
+  </footer>
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="js/vendor/jquery-1.10.2.min.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="app.js"></script>
+
+  <script src="pack112/pack112.js"></script>
+  <script src="bobcat/bobcat.js"></script>
+  <script src="home/home.js"></script>
+
+  <script src="quiz/quiz.js"></script>
+  <script src="tiger/tiger.js"></script>
+  <script src="wolf/wolf.js"></script>
+  <script src="bear/bear.js"></script>
+  <script src="webelos/webelos.js"></script>
+  <script src="resources/resources.js"></script>
+
+  <!--<script src="components/version/version.js"></script>-->
+  <!--<script src="components/version/version-directive.js"></script>-->
+  <!--<script src="components/version/interpolate-filter.js"></script>-->
+</body>
+
+</html>

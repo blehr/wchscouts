@@ -1,0 +1,43 @@
+[{
+        "question": "On my honor I will do my ...",
+        "choices": ["duty", "best", "job"],
+        "correctAns": 1
+    }, {
+        "question": "To do my duty to _ and my country ",
+        "choices": ["God", "the den", "the pack"],
+        "correctAns": 0
+    }, {
+        "question": "and to _ the Scout Law",
+        "choices": ["uphold", "follow", "obey"],
+        "correctAns": 2
+    }, {
+        "question": "To help other people at ...",
+        "choices": ["all times", "in all ways", "in all places"],
+        "correctAns": 0
+    }, {
+        "question": "To keep myself _ strong,",
+        "choices": ["emotionally", "mentally", "physically"],
+        "correctAns": 2
+    }, {
+        "question": "mentally awake, and morally _ .",
+        "choices": ["straight", "upright", "honest"],
+        "correctAns": 0
+    }, {
+        "question": "A Scout is _",
+        "choices": ["trustworthy", "honest", "hardworking"],
+        "correctAns": 0
+    }, {
+        "question": "A Scout is trustworthy, loyal, helpful, friendly, _",
+        "choices": ["clean", "courteous", "thrifty"],
+        "correctAns": 1
+    }, {
+        "question": "A Scout is trustworthy, loyal, helpful, friendly, courteous, kind, obedient, _",
+        "choices": ["happy", "joyful", "cheerful"],
+        "correctAns": 2
+    }, {
+        "question": "A Scout is hungry!",
+        "choices": ["True"],
+        "correctAns": 0
+    }
+
+]
